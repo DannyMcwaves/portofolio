@@ -1,0 +1,48 @@
+body {
+}
+
+#navpane{
+    border-radius: 0px;
+    border-bottom: 1px inset #444;
+}
+
+#navpane .btn-group button{
+    font-family: Montserrat-Bold;
+}
+a#ctrl{
+    font-family: Montserrat-Bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding-top: 0px;
+}
+
+#menu{
+    padding-top: 10px;
+    border-bottom: 1px inset #444;
+}
+
+#menu a{
+    color: black;
+    text-decoration: none;
+}
+
+#menu figure figcaption{
+    text-align: center;
+    color: #444;
+    font-size: 0.8em;
+}
+
+p {
+    color: #330033;
+}
+pre p{
+    font-size: 13px;
+    font-family: Raleway-Black;
+    width: 500px;
+    text-overflow: ellipsis;
+}
+pre{
+    width: 100%;
+    text-overflow: ellipsis;
+}

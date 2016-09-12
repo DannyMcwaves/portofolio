@@ -1,0 +1,192 @@
+*{
+	transition: all 1s;
+}
+body{
+	padding-bottom: 20px;
+}
+
+#navCarousel{
+	background-color: #000;
+}
+#navCarousel a{
+	text-decoration: none;
+	color: black;
+	outline: 0px;
+	background-color: white;
+	padding: 5px 10px;
+	top: 200px;
+}
+
+#navCarousel a.left{
+	left: 0px;
+}
+
+#navCarousel a.right{
+	right: 0px;
+}
+div.carousel-item .blacker{
+	background-color: white;
+	color: #330033;
+	font-family: Lato-Black;
+	opacity: 0.8;
+	padding-bottom: 10px;
+	padding-top: 3px;
+}
+div.carousel-item {
+	height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.bd-b {
+	border: 2px solid white;
+}
+div.one{
+	background-image: url(../images/photos/01_1280.jpg);
+}
+div.five{
+	background-image: url(../images/photos/map.jpg);
+}
+div.two{
+	background-image: url(../images/photos/back.jpg);
+}
+div.three{
+	background-image: url(../images/photos/01712_disruption_1680x1050.jpg);
+}
+div.four{
+	background-image: url(../images/photos/2996.jpg);
+}
+
+#navCarousel div.card-group{
+	bottom: 0px;
+	opacity: 0.8;
+	background-color: cadetblue;
+}
+
+div.card h4 {
+	font-family: Lato-Black;
+}
+div.card .label{
+	position: relative;
+	bottom: 10px;
+}
+.tf{
+	font-family: LobsterTwo-Regular;
+}
+div.card .card-text{
+	font-family: Montserrat-Light;
+	font-weight: 300;
+}
+#navigation{
+	border-top: 5px solid #000;
+	border-bottom: 5px solid #000;
+}
+.me{
+	border: 2px solid #ddd;
+}
+#intro h2{
+	font-family: Montserrat-Bold;
+}
+#intro small{
+	position: relative;
+	bottom: 15px;
+}
+#intro{
+	background-image: url(../images/photos/YCa7V.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 0px;
+	background-attachment: fixed;
+}
+#introMain{
+	opacity: 0.9;
+	border: 0px;
+}
+#btn{
+	border-radius: 350px;
+	text-decoration: none;
+	transform:rotate(-90deg);
+	padding-top: 7px;
+	padding-bottom: 7px;
+	outline: 0px;
+}
+
+#btn:hover{
+	background-color: white;
+	color: black;
+}
+#btn:active{
+	outline: 0px;
+	border: 0px;
+}
+#navbar{
+/*	background-color: #433;*/
+}
+.footer img{
+	width: 40px;
+	height: 38px;
+}
+.footer a {
+	text-decoration: none;
+}
+#menu figure figcaption{
+	text-align: center;
+	color: crimson;
+	text-decoration: none;
+}
+#menu a{
+	text-decoration: none;
+}
+#menu figure img{
+	cursor: pointer;
+}
+.jumbotron{
+	margin-bottom: 0px;
+}
+
+#dan{
+	background-image: url(../images/photos/YCa7V.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+#dan h4{
+	font-family: Montserrat-Bold;
+	color: #433;
+}
+#dan article{
+	font-family: Lato-SemiBold;
+	text-align: justify;
+	color: #433;
+}
+
+
+
+@media screen and (max-width: 543px) {
+	#time{
+		left: 20%;
+	}
+	#menu{
+		font-size: 13px;
+	}
+}
+
+@media screen and (min-width: 543px) and (max-width: 767px) {
+	#time{
+		left: 35%;
+	}
+	p.text{
+		font-size: 10px;
+	}
+	#menu{
+		font-size: 11px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+    #time{
+		left: 40%;
+	}
+	#menu{
+		font-size: 13px;
+	}
+}

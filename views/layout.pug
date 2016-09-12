@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='../css/bootstrap.min.css')
+    link(rel='stylesheet', href="../css/all.css")
+    link(rel='stylesheet', href='../css/font.css')
+    link(rel="stylesheet", href="../css/style.css")
+    link(rel="icon" href="../images/logos/log1.png")
+
+  body
+
+    nav#navpane(class="navbar navbar-dark bg-faded")
+
+        a(class="btn-group btn-group-sm")
+            button(type="button" class="btn btn-black border-white")
+                img(src="../images/logos/log1.png" height="17px")
+            button(type="button" class="btn btn-black border-white text-white") DANNY
+            button(type="button" class="btn btn-black border-white text-white") McWAVES
+
+        a#ctrl(class="pull-xs-right btn btn-sm bg-black") &#9776;
+
+    div(class="container-fluid")
+        div#menu(class="row bg-faded")
+            section(class="col-xs-3")
+                a(href="cv")
+                    figure#cv
+                        img(src="../images/new/rost.png" class="img-fluid")
+                        figcaption About
+
+            section(class="col-xs-3")
+                a(href="skills")
+                    figure#skills
+                        img(src="../images/new/comp.png" class="img-fluid")
+                        figcaption Skills
+
+            section(class="col-xs-3")
+                a(href="projects")
+                    figure#projects
+                        img(src="../images/new/disco.png" class="img-fluid")
+                        figcaption My Projects
+
+            section(class="col-xs-3")
+                a(href="vision")
+                    figure#vision
+                        img(src="../images/new/visi.png" class="img-fluid")
+                        figcaption Vision
+
+    block content
+
+    script(src="../js/jquery-2.1.4.min.js")
+    script(src="../js/bootstrap.min.js")
