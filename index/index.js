@@ -16,3 +16,22 @@ $("#cv").click(function (event) {
 		window.alert(response);
 	});
 });
+
+$(window).resize(function (event) {
+	"use strict";
+	$("div.carousel-item").css({
+		height: $(window).outerHeight()
+	});
+}).ready(function (event) {
+	"use strict";
+	$("div.carousel-item").css({
+		height: $(window).outerHeight()
+	});
+});
+
+function divWidth() {
+	"use strict";
+	$("div#start, div#startTwo").height($("div.carousel-item").height());
+}
+
+$(window).ready(divWidth).resize(divWidth);

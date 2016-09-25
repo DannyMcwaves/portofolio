@@ -1,0 +1,33 @@
+
+.card{
+    margin: 0px;
+}
+
+div.card h1{
+    font-family: Montserrat-Bold;
+    font-size: 1.5em;
+    color: crimson;
+}
+div.card p{
+    font-size: 0.97em;
+}
+
+div.node h1{
+    color: #444;
+}
+
+h1#text-black{
+    color: black;
+}
+
+h1#text-success{
+    color: yellowgreen;
+}
+
+h1#skills{
+    color: burlywood;
+}
+
+div#samples #modal-body{
+    font-family: Lato-Heavy;
+}

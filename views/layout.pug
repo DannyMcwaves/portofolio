@@ -6,47 +6,91 @@ html
     link(rel='stylesheet', href="../css/all.css")
     link(rel='stylesheet', href='../css/font.css')
     link(rel="stylesheet", href="../css/style.css")
-    link(rel="icon" href="../images/logos/log1.png")
+    link(rel="icon" href="../images/social/log1.png")
+    - if (path === "cv") {
+        link(rel="stylesheet" href="../css/cv.css")
+    - } else if (path === "skills") {
+        link(rel="stylesheet" href="../css/skills.css")
+    - } else if (path === "projects") {
+        link(rel="stylesheet" href="../css/projects.css")
+    - } else if (path === "vision") {
+        link(rel="stylesheet" href="../css/vision.css")
+    - }
 
   body
 
     nav#navpane(class="navbar navbar-dark bg-faded")
 
-        a(class="btn-group btn-group-sm")
+        a(href="/" class="btn-group btn-group-sm")
             button(type="button" class="btn btn-black border-white")
-                img(src="../images/logos/log1.png" height="17px")
+                img(src="../images/social/log1.png" height="17px")
             button(type="button" class="btn btn-black border-white text-white") DANNY
             button(type="button" class="btn btn-black border-white text-white") McWAVES
 
         a#ctrl(class="pull-xs-right btn btn-sm bg-black") &#9776;
 
-    div(class="container-fluid")
-        div#menu(class="row bg-faded")
+    div#menu(class="container-fluid bg-faded collapse")
+        div(class="row p-t-2")
             section(class="col-xs-3")
                 a(href="cv")
                     figure#cv
                         img(src="../images/new/rost.png" class="img-fluid")
-                        figcaption About
+                        figcaption.hidden-xs-down About Me
 
             section(class="col-xs-3")
                 a(href="skills")
                     figure#skills
                         img(src="../images/new/comp.png" class="img-fluid")
-                        figcaption Skills
+                        figcaption.hidden-xs-down My Skills
 
             section(class="col-xs-3")
                 a(href="projects")
                     figure#projects
                         img(src="../images/new/disco.png" class="img-fluid")
-                        figcaption My Projects
+                        figcaption.hidden-xs-down My Projects
 
             section(class="col-xs-3")
                 a(href="vision")
                     figure#vision
                         img(src="../images/new/visi.png" class="img-fluid")
-                        figcaption Vision
+                        figcaption.hidden-xs-down My Vision
 
     block content
 
+    div#footer(class="container text-xs-center p-a-3")
+        article
+            a(href="/" class="btn btn-sm btn-primary-outline m-l-1 m-r-1") Home
+            a(href="/cv" class="btn btn-sm btn-primary-outline m-l-1 m-r-1") About me
+            a(href="/skills" class="btn btn-sm btn-primary-outline m-l-1 m-r-1") My skills
+            a(href="/projects" class="btn btn-sm btn-primary-outline m-l-1 m-r-1") My Projects
+            a(href="/vision" class="btn btn-sm btn-primary-outline m-l-1 m-r-1") My vision
+
+        article(class="m-t-2")
+            a(href="http://www.facebook.com/dannymcwaves.halbrok")
+                img(src="../images/social/facebook.svg")
+            a(href="http://www.twitter.com/dannymcwaves")
+                img(src="../images/social/twitter.svg")
+            a(href="https://gh.linkedin.com/in/ayikpah-danny-mcwaves-4b2b58a7")
+                img(src="../images/social/linkedin.svg")
+            a(href="http://github.com/DannyMcwaves")
+                img(src="../images/social/download.png")
+            a(href="mailto:dannymcwaves96@gmail.com")
+                img(src="../images/social/mail.svg")
+            a(href="http://www.instagram.com/DannyMcwaves")
+                img(src="../images/social/inst.jpeg")
+
+        article(class="text-success p-t-1") A Danny Mcwaves Presentation.
+
+
     script(src="../js/jquery-2.1.4.min.js")
+    script(src="../js/tether.min.js")
     script(src="../js/bootstrap.min.js")
+    - if (path === "cv") {
+        script(src="../js/cv.js")
+    - } else if (path === "skills") {
+        script(src="../js/skills.js")
+    - } else if (path === "projects") {
+        script(src="../js/projects.js")
+    - } else if (path === "vision") {
+        script(src="../js/vision.js")
+    - }

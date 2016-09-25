@@ -16,7 +16,7 @@
     text-overflow: clip;
 }
 body{
-    font-family: Quicksand-Bold;
+    font-family: Montserrat-Regular;
 }
 .btn-crimson{
     background-color: #cc3366;
@@ -56,9 +56,19 @@ body{
 .bg-black{
 	background-color: black;
 }
+.bg-white{
+	background-color: white;
+}
 .bg-orange{
 	background-color: orangered;
 }
 .block{
 	display: block;
+}
+.bg-grey{
+    background-color: #444;
+    color: white;
+}
+.bdb-1 {
+    border-bottom: 1px solid white;
 }

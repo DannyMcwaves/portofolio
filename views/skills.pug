@@ -1,5 +1,72 @@
 extends layout
 
 block content
-    link(rel="stylesheet" href="../css/skills.css")
-    script(src="../js/skills.js")
+
+    div#samples(class="modal fade" role="dialog" tabindex="-1")
+        div.modal-dialog.modal-lg(role="document")
+            div.modal-content
+                div.modal-header.bg-inverse
+                    button.close(type="button" data-dismiss="modal")
+                        span &times;
+                    h4.modal-title.text-danger SAMPLE CODE
+
+                div#modal-body.modal-body
+                    | and here is the body.
+
+                div.modal-footer
+                    button(class="btn btn-danger btn-sm" type="button" data-dismiss="modal") CLOSE
+
+
+    div(class="card p-a-2 text-xs-center start")
+        img(src="../images/photos/pls.jpeg" class="card-img-top m-b-2")
+        h1#skills SKILLS
+        p.text-muted
+            | I am not trying to oversell myself but I think my skills are just as
+            | certified as anyone's when it comes to frontend and backend web development.
+            | And I am just trying to showcase some of them over here. Click on the images to see
+            | some sample codes.
+
+    div(class="card p-a-2 text-xs-center py")
+        a(data-toggle="modal" data-target="#samples")
+            img(src="../images/photos/py2.jpeg" id="py" class="card-img-top hand m-b-2")
+        h1.text-warning PYTHON
+        p.text-muted
+            | I am an official pythonista. I am very well vexed in the python language.
+            | Most of my programs are written in python. I know the ins and out of the language. I can use the
+            | Django framework - but I am currently in love with node, also I can use the tkinter GUI toolkit
+            | it comes packaged with and the kivy GUI toolkit. I pentest web apps in python and I can
+            | create a framework using abstract base classes, mixims etc. Bottom line is I spent a lot of time
+            | with python than I probably should.
+
+    div(class="card p-a-2 text-xs-center node")
+        a(data-toggle="modal" data-target="#samples")
+            img(src="../images/photos/node.png" id="node" class="card-img-top hand m-b-2")
+        h1.text-success NODE.js
+        p.text-muted
+            | Node is one of the easiest languages I ever had to work with, maybe because I had being using
+            | javascript for frontend, far too long. But I really love it's simple asynchronous nature. I love
+            | to use it for network applications. so I end up using the socket.io, express, request modules,
+            | JSON and AJAX technologies
+            | a lot. Also I can create desktop apps with node using electron. And the backend of
+            | this site is written in node with express.
+
+    div(class="card p-a-2 text-xs-center jscript")
+        a(data-toggle="modal" data-target="#samples")
+            img(src="../images/photos/js.png" id="jscript" class="card-img-top hand m-b-2")
+        h1#text-black JAVASCRIPT
+        p.text-muted
+            | I started writing javascript codes since high school, the nascent stage of my learning curve.
+            | Most of the codes I wrote in javascript do not depend on libraries. As a result, I use only a
+            | fair amount of libraries I find really useful and time sparing like bootstrap,
+            | jquery and angular. If not, I write custom mini libraries for a particular project.
+
+    div(class="card p-a-2 text-xs-center markup")
+        a(data-toggle="modal" data-target="#samples")
+            img(src="../images/photos/mkup.jpeg" id="markup" class="card-img-top hand m-b-2")
+        h1#text-success MARKUP, STYLESHEET AND DATABASES.
+        p.text-muted
+                | I wouldn't call myself a database manager, but just like html, css are needed for web pages,
+                | I can create and access databases from within a programming language like pymysql and sqlite3
+                | modules available in python. or mongoDB from node. I am also good with xml for data handling,
+                | processing and validation using schema especially with python. And I don't think HTML and css
+                | skills are 'advertisable'.

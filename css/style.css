@@ -3,12 +3,15 @@ body {
 
 #navpane{
     border-radius: 0px;
-    border-bottom: 1px inset #444;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    border-bottom: 1px inset #443;
 }
 
 #navpane .btn-group button{
     font-family: Montserrat-Bold;
 }
+
 a#ctrl{
     font-family: Montserrat-Bold;
     color: white;
@@ -18,8 +21,9 @@ a#ctrl{
 }
 
 #menu{
-    padding-top: 10px;
+/*    padding-top: 10px;*/
     border-bottom: 1px inset #444;
+	width: 100%;
 }
 
 #menu a{
@@ -31,11 +35,13 @@ a#ctrl{
     text-align: center;
     color: #444;
     font-size: 0.8em;
+	font-family: Montserrat-Regular;
 }
 
 p {
     color: #330033;
 }
+
 pre p{
     font-size: 13px;
     font-family: Raleway-Black;
@@ -45,4 +51,18 @@ pre p{
 pre{
     width: 100%;
     text-overflow: ellipsis;
+}
+
+#footer{
+    font-size: 0.9em;
+}
+
+#footer a.btn{
+    margin-top: 5px;
+}
+
+#footer img{
+	width: 40px;
+	height: 38px;
+    margin-left: 5px;
 }

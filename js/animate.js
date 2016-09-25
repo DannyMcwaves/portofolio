@@ -13,11 +13,11 @@ free licensed.
 var $ = window.$;
 var Animation = (function (Animation) {
     "use strict";
-    /* 
+    /*
     this thing is done by calling the animation and passing the id of the element on which you want
     to pass the animation. Else if you pass a tagname, then you might be passing a new.
     */
-    
+
     function slideOut(elementId, time) {
         var slideOut_width = $(elementId).outerWidth(true);
         $(elementId).attr("data", slideOut_width);
@@ -32,7 +32,7 @@ var Animation = (function (Animation) {
             $(this).hide(500);
         });
     }
-    
+
     function slideIn(elementId, time) {
 
         $(elementId).css({
@@ -46,10 +46,9 @@ var Animation = (function (Animation) {
             $(elementId).removeAttr("data");
         });
     }
-    
+
     Animation.slideOut = slideOut;
     Animation.slideIn = slideIn;
-    
+
     return Animation;
 }(Animation || {}));
-

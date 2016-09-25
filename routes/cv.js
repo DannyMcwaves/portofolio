@@ -6,11 +6,15 @@ to be called by the req client.
 */
 var express = require('express'),
     router = express.Router();
-    app = express();
+    var fs = require('fs');
 
 router
     .get("/", function (req, res) {
         res.render("cv")
+    })
+    .get("/pdf_version", function (req, res) {
+        pdf = __dirname + "/pdf_version.pdf";
+        res.download(pdf);
     })
 
 

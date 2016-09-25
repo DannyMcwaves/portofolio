@@ -1,1 +1,94 @@
 
+#intro{
+	font-family: Montserrat-Bold;
+	background-image: url(../images/photos/press.jpg);
+	background-size: cover;
+	background-attachment: scroll;
+
+}
+
+#intro div#inner {
+	background-color: black;
+	opacity: 0.6;
+	margin-bottom: 0px;
+	/*box-shadow: 10px 10px 15px #000;*/
+}
+
+#intro div#inner h2{
+	text-transform: uppercase;
+}
+
+#intro div#inner p{
+	font-family: Montserrat-Regular;
+	font-size: 0.95em;
+}
+
+article.card{
+	border: 0px;
+	border-radius: 0px;
+	opacity: 0.95;
+}
+
+article.card h4{
+	font-family: Montserrat-Bold;
+	text-transform: uppercase;
+	color: #444;
+	font-size: 1.1em;
+	margin: 0px;
+}
+
+article.card li{
+	font-family: Montserrat-Regular;
+	font-size: 0.8em;
+}
+
+div.cv h4{
+	font-family: Lato-Black;
+	font-size: 1.1em;
+	color: black;
+}
+div.edu{
+
+}
+
+div.cv article{
+	font-size: 0.85em;
+}
+
+div.bg-grey h4{
+	color: silver;
+}
+
+div.start{
+	height: 300px;
+	background-image: url(../images/photos/skill.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div.work{
+	height: 300px;
+	background-image: url(../images/photos/work.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div.social{
+	height: 300px;
+	background-image: url(../images/photos/team.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div.skills{
+	border-top: 1px inset darkgrey;
+}
+div.motivation{
+	border-top: 1px outset aliceblue;
+}
+div.hand{
+	height: 300px;
+	background-image: url(../images/photos/team.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}

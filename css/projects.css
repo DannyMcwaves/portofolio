@@ -1,0 +1,44 @@
+body{
+	background-color: #f7f7f9;
+}
+
+div.jumbotron{
+	border-bottom: 1px inset #444;
+	margin: 0px;
+}
+
+.hp{
+	font-family: KaushanScript-Regular;
+}
+
+.hp + div{
+	font-family: KaushanScript-Regular;
+	font-size: 1.1em;
+}
+
+.card {
+  	padding: .75rem;
+  	margin-bottom: 2rem;
+  	border: 0;
+	border-radius: 0px;
+	transition: all 0.4s;
+}
+
+div.card:hover{
+	position: relative;
+	transform: scale(1.03);
+	z-index: 5;
+}
+
+div.album{
+	background-color: #444;
+	color: white;
+}
+
+div.card h3{
+	font-size: 1.3em;
+}
+div.card p {
+	font-family: Lato-Heavy;
+	font-size: 12px;
+}

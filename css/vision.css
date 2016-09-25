@@ -1,0 +1,27 @@
+body{
+
+}
+
+.bg-img{
+        background-image: url(../images/photos/fractal.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+.bg-fad{
+    background-color: #444;
+}
+
+div.row.card{
+    border: 0px;
+}
+
+div.row h4{
+    font-family: Lato-Heavy;
+}
+
+div.row article.text{
+    font-family: Lato-Heavy;
+    font-size: 0.85em;
+    text-align: justify;
+}

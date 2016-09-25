@@ -1,5 +1,118 @@
 extends layout
 
 block content
-    link(rel="stylesheet" href="../css/cv.css")
-    script(src="../js/cv.js")
+    div#intro
+        div#inner(class="jumbotron jumbotron-fluid text-xs-center")
+            div(class="container p-t-2")
+                h2(class="text-danger") welcome to my world
+                p(class="lead text-white")
+                    | well well well, if you made it this far, then let me just say thank you. I don't really
+                    | have much experience with introducing myself or talking about me and my experiences
+                    | but I am going to try to give you a copy of my CV or resume and also
+                    | there is a pdf version of it for <br> <br>
+                    a(href="/cv/pdf_version")
+                        button#pdf(class="btn btn-sm btn-danger") DOWNLOAD
+
+    div.start
+
+    article(class="card text-xs-center p-a-2")
+        img(src="../images/photos/dm2.jpg" height="100px" width="105px" class="img-thumbnail card-img-top hand")
+        div.card-block
+            h4(class="card-title") Ayikpah Danny Amanor Mcwaves
+            li.text-muted Box 28 Ada, Ghana - West Africa, Africa.
+            li.text-muted Email: <a href="mailto:dannymcwaves96@gmail.com">dannymcwaves96@gmail.com</a>
+            li.text-muted tel: +233 20 296 4065
+
+    div(class="cv edu container-fluid m-t-2 m-b-2 p-t-2")
+        div(class="row")
+            div(class="col-sm-5 hidden-xs-down")
+                img(src="../images/photos/s2.jpg" class="img-fluid")
+            div(class="col-xs-12 col-sm-7")
+                h4 EDUCATION
+                article(class="m-l-3 p-b-2")
+                    | <span class="text-warning">2014 May - Now</span><br/>
+                    | I took an introductory course in computer science for a period of 8
+                    | months (2014 May - 2015 January) in an IT school but I dropped out
+                    | , not intentionally but for reasons beyond my control. After, I had a mentor/mentee program
+                    | with a highly accomplished computer scientist where I learned enough about computers
+                    | and more advanced programming - I have being programming since high school. I still think of
+                    | myself as a green horn or newbie in the computer world, so I am still learning and practicing
+                    | more and more.<br><br>
+                    | <span class="text-warning">2011 - 2014</span><br>
+                    | school: Achimota School.<br>
+                    | Within this period, I was in high school. I took a course in Science and an extra course
+                    | in pre-Calculus.
+                    | I graduated with distinction (6A's and 2B's) but
+                    | I couldn't make college. Again, for reasons beyond my control. Hence the next course of
+                    | my life afore-mentioned.
+
+    div.work
+
+    div(class="cv bg-faded p-t-2")
+        div(class="container")
+            div
+                h4 WORK EXPERIENCE
+                article(class="m-l-3 p-b-2")
+                    | I have never really applied for a job before but I was invited by my grade school
+                    | principal to work as a science tutor and I also doubled as their IT teacher. I taught
+                    | students who were over my age. Not to toot my own horn, but it was an impressive
+                    | work I did. Most of the student had good grades in science and maths.
+                    | This started prior to my dropping out of IT school.<br>
+                    | Other than that, most of the works I did have to be web and desktop app development for people but I consider it
+                    | more of training and practicing than work. Most of those have to be source code distribution
+                    | and nothing commercial I can reference.
+
+
+    div(class="cv bg-faded container-fluid skills p-a-3")
+        div(class="row")
+            div(class="col-sm-7 col-xs-12")
+                h4 SKILLS
+                article(class="m-l-3 p-b-2")
+                    | I do not subscribe to the paradigm where I would say I am good at this or that and I
+                    | can do this or that. How about I show you what I know and what I can do. You can see the
+                    | <a href="/skills"><button class="btn btn-sm btn-primary"> MY SKILLS </button></a> section for my
+                    | skills and <a href="/projects"><button class="btn btn-sm btn-primary"> MY PROJECTS </button></a>
+                    | section for some of the projects I have done. But as I said earlier I am very good with python,
+                    | Node, xml, API's and I would say Frontend web development is a piece of cake. I can program in C but not
+                    | efficiently. I have a working and practical knowledge of database technologies like mySQL and
+                    | mongoDB. Also I use a Linux system, so suffice to say I am skilled with Unix boxes.
+
+            div(class="col-sm-5 hidden-xs-down")
+                img(src="../images/photos/skill.jpg" class="img-fluid")
+
+    div.social
+
+    div(class="cv bg-grey p-t-2")
+        div(class="container")
+            div
+                h4 SOCIAL AND TEAM SKILLS
+                article(class="m-l-3 p-b-2")
+                    | There is a question on the Caltech application form, ' would you consider yourself
+                    | a geek or a nerd ? '. I do not know which one of those I am, but I love to socialize especially with
+                    | people whose level I want to rise up to. I love to work a lot and to see work get done to its completion.
+                    | I love things that more outgoing people love. I am not the first to break a team or let a team down
+                    | for any reason whatsoever. I am very dedicated to my duty and I always hold myself responsible for
+                    | and accountable to my duties even
+                    | in case of any mishap. I am loyal and trustworthy person. If you need a zodiac sign I am Scorpio.
+                    | I do not know if I am making that impression but I can communicate my thoughts very clearly and concisely.
+                    | Put me in a team as the leader or a member and you will be amazed with the outcome.
+
+    div(class="cv bg-grey motivation p-t-2")
+        div(class="container")
+            div
+                h4 MOTIVATION AND AMBITION
+                article(class="m-l-3 p-b-2")
+                    | There is more than one way to solve a problem. Not that I always get what I want but I love
+                    | to work for what I want. I could have given up on my dreams considering what I had being
+                    | going through or even my location and its setbacks, but it's not in my blood to give up.<br>
+                    | I am not a perfectionist, but I love to get work done in a way that it cannot be outdone or
+                    | replicated. I hate mediocrity and that is why I will not make any reason for not being good
+                    | at what I love, no matter how obvious and challenging those reasons are. I want to be the best
+                    | and to give the best I can<br>
+                    | I have an open mind and a deep love for learning so I would love to intern at a well-settled
+                    | startup to enhance my skills as a computer scientist and a programmer at large, through large efforts,
+                    | innovation and constant use of the skills I have labored hard to acquire. And also, I am very willing to travel
+                    | to any location just to sharpen my skills and to help in any work community where my skill, competence
+                    | and attitude is needed.
+
+    div.hand

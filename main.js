@@ -42,14 +42,22 @@ app.use("/fonts", express.static("./fonts"));
 app.use("/images",  express.static("./images"));
 app.use("/js", express.static("./js"));
 app.use("/css", express.static("./css"));
-app.use("/cv", cv);
-app.use("/skills", skills);
-app.use("/projects", projects);
-app.use("/vision", vision);
 
+app.use("/:path", function (req, res, next) {
+    ptype = req.params.path;
+    app.locals.path = ptype;
+    next();
+});
 
-app.get("*", function (req, res) {
-	res.redirect("/");
+app.use("/cv", cv)
+app.use("/skills", skills)
+app.use("/projects", projects)
+app.use("/vision", vision)
+
+app.use("*", function (req, res, next) {
+    console.log(req.url);
+    next();
+    // res.redirect("/");
 });
 
 /// catch 404 and forwarding to error handler

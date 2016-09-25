@@ -14,16 +14,19 @@ body{
 	outline: 0px;
 	background-color: white;
 	padding: 5px 10px;
-	top: 200px;
+	top: 300px;
 }
 
 #navCarousel a.left{
 	left: 0px;
+	font-family: Lato-Black;
 }
 
 #navCarousel a.right{
 	right: 0px;
+	font-family: Lato-Black;
 }
+
 div.carousel-item .blacker{
 	background-color: white;
 	color: #330033;
@@ -32,20 +35,23 @@ div.carousel-item .blacker{
 	padding-bottom: 10px;
 	padding-top: 3px;
 }
+
 div.carousel-item {
-	height: 500px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 }
+
 .bd-b {
-	border: 2px solid white;
+	border: 2px solid white
 }
+
 div.one{
 	background-image: url(../images/photos/01_1280.jpg);
 }
+
 div.five{
-	background-image: url(../images/photos/map.jpg);
+	background-image: url(../images/photos/skill.jpg);
 }
 div.two{
 	background-image: url(../images/photos/back.jpg);
@@ -54,7 +60,56 @@ div.three{
 	background-image: url(../images/photos/01712_disruption_1680x1050.jpg);
 }
 div.four{
-	background-image: url(../images/photos/2996.jpg);
+	background-image: url(../images/photos/map.jpg);
+}
+div.six{
+	background-image: url(../images/photos/scape.jpg);
+}
+
+div#start{
+	background-color: black;
+	border: 1px solid black;
+}
+
+div#start h4{
+	font-family: Montserrat-Black;
+	font-size: 2.5em;
+}
+
+div#start h6{
+	font-size: 0.8em;
+	font-family: Lato-Heavy;
+	text-transform: capitalize;
+}
+
+div#start .card-block p {
+	font-family: KaushanScript-Regular;
+	font-size:  1.5em;
+}
+
+div#startTwo{
+	border: 1px solid #444;
+}
+
+div.six #bml{
+	background-color: #444;
+}
+
+div.six h4{
+	font-size: 2.5em;
+}
+
+div.six h4{
+
+}
+
+div#startTwo .card-block p {
+	font-family: Lato-Heavy;
+}
+
+article#black{
+	background-color: black;
+	border-bottom: 0px;
 }
 
 #navCarousel div.card-group{
@@ -78,8 +133,8 @@ div.card .card-text{
 	font-weight: 300;
 }
 #navigation{
-	border-top: 5px solid #000;
-	border-bottom: 5px solid #000;
+	border-top: 5px solid #444;
+	border-bottom: 5px solid #444;
 }
 .me{
 	border: 2px solid #ddd;
@@ -122,16 +177,19 @@ div.card .card-text{
 #navbar{
 /*	background-color: #433;*/
 }
+
 .footer img{
 	width: 40px;
 	height: 38px;
 }
+
 .footer a {
 	text-decoration: none;
 }
 #menu figure figcaption{
 	text-align: center;
-	color: crimson;
+	color: #444;
+	font-family: Montserrat-Regular;
 	text-decoration: none;
 }
 #menu a{
@@ -142,6 +200,14 @@ div.card .card-text{
 }
 .jumbotron{
 	margin-bottom: 0px;
+	background-color: #444;
+	color: white;
+}
+.jumbotron #head{
+	color: white;
+}
+.jumbotron #head + article{
+	color: lightgrey;
 }
 
 #dan{
