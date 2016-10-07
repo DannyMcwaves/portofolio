@@ -72,13 +72,13 @@ div#start{
 }
 
 div#start h4{
-	font-family: Montserrat-Black;
+	font-family: OpenSans-ExtraBold;
 	font-size: 2.5em;
 }
 
 div#start h6{
-	font-size: 0.8em;
-	font-family: Lato-Heavy;
+	font-size: 0.9em;
+	font-family: font-family: OpenSans-SemiBold;;
 	text-transform: capitalize;
 }
 
@@ -88,23 +88,23 @@ div#start .card-block p {
 }
 
 div#startTwo{
-	border: 1px solid #444;
+	border: 1px solid black;
+	background-color: black;
 }
 
 div.six #bml{
-	background-color: #444;
+	background-color: black;
 }
 
-div.six h4{
-	font-size: 2.5em;
-}
-
-div.six h4{
-
+div#startTwo h4{
+	font-size: 2.3em;
+	font-family: OpenSans-ExtraBold;
+	/*color: crimson;*/
 }
 
 div#startTwo .card-block p {
-	font-family: Lato-Heavy;
+	font-family: Lato-Bold;
+	word-spacing: 1.4px;
 }
 
 article#black{
@@ -119,8 +119,9 @@ article#black{
 }
 
 div.card h4 {
-	font-family: Lato-Black;
+	font-family: Lato-Black
 }
+
 div.card .label{
 	position: relative;
 	bottom: 10px;
@@ -133,8 +134,8 @@ div.card .card-text{
 	font-weight: 300;
 }
 #navigation{
-	border-top: 5px solid #444;
-	border-bottom: 5px solid #444;
+	/*border-top: 5px solid #444;*/
+	/*border-bottom: 5px solid #444;*/
 }
 .me{
 	border: 2px solid #ddd;
